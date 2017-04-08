@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<h1 class="page-header">Welcome Back, {% if current_user.is_authenticated %} {{ current_user.username }} {% else %} Stranger {% endif %}!</h1>
+
+
+<div class="col-lg-4">
+    <h3><a href="{{ url_for('main.content') }}"><b>Top 13 Things you Didn't Know about McDonald's</b></a></h3>
+</div>
+
+{% endblock %}

@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h4>Your account is unconfirmed right now. Click <a href="{{ url_for('auth.resend_confirmation') }}">here</a> to resend the activation email.</h4>
+{% endblock %}
